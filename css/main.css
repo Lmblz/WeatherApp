@@ -1,0 +1,155 @@
+html {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+}
+html * {
+  margin: 0;
+  padding: 0;
+}
+html h1 {
+  font-size: 3rem;
+}
+html h2 {
+  font-size: 2rem;
+}
+html h3 {
+  font-size: 1.75rem;
+}
+html h4 {
+  font-size: 1.5rem;
+}
+html body {
+  min-height: 100vh;
+  margin: 0;
+}
+html body main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #333;
+}
+html body main .main-infos {
+  width: 60%;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html body main .main-infos__titles {
+  text-align: left;
+}
+html body main .main-infos__titles h1 {
+  margin-bottom: 2rem;
+}
+html body main .main-infos__form {
+  display: flex;
+  flex-direction: column;
+}
+html body main .main-infos__form h2 {
+  margin-bottom: 2rem;
+}
+html body main .main-infos__form input {
+  border: 0;
+  outline: none;
+  background: #aa99d7;
+  height: 2rem;
+  max-width: 500px;
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+html body main .main-infos__form input:first-of-type {
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+html body main .main-infos__form input:first-of-type:active, html body main .main-infos__form input:first-of-type:focus, html body main .main-infos__form input:first-of-type:focus-within, html body main .main-infos__form input:first-of-type:target, html body main .main-infos__form input:first-of-type:visited, html body main .main-infos__form input:first-of-type:focus-visible {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+html body main .main-infos__form input:first-of-type:active::placeholder, html body main .main-infos__form input:first-of-type:focus::placeholder, html body main .main-infos__form input:first-of-type:focus-within::placeholder, html body main .main-infos__form input:first-of-type:target::placeholder, html body main .main-infos__form input:first-of-type:visited::placeholder, html body main .main-infos__form input:first-of-type:focus-visible::placeholder {
+  color: #aa99d7;
+}
+html body main .main-infos__form input:last-of-type {
+  background: none;
+  color: #aa99d7;
+  border: solid 1px #aa99d7;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+html body main .main-infos__form input:last-of-type:hover {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background: #aa99d7;
+  color: white;
+}
+html body main .main-infos__form input::placeholder {
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+html body main .main-infos__cards {
+  display: flex;
+  justify-content: space-around;
+}
+html body main .main-infos__cards__card {
+  background-color: #aa99d7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+html body main .main-infos__cards__card__desc {
+  width: 70%;
+  text-align: center;
+}
+html body main .main-infos__cards__card__desc h3, html body main .main-infos__cards__card__desc h4 {
+  margin: 2rem auto;
+}
+html body main .main-infos__cards__card img {
+  height: 64px;
+}
+html body main .more-infos {
+  background: #B993D6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
