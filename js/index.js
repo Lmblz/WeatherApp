@@ -34,6 +34,8 @@ function requestWeather() {
             }
             console.log(data)
             changeInputs();
+            var favicon = document.querySelector("link[rel~='icon']")
+            favicon.setAttribute('href', data.current.condition.icon)
         } 
     } else {
         alert('Veuillez entrer une ville')
