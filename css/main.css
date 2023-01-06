@@ -18,6 +18,9 @@ html h3 {
 html h4 {
   font-size: 1.5rem;
 }
+html p {
+  font-size: 1.5rem;
+}
 html body {
   min-height: 100vh;
   margin: 0;
@@ -150,6 +153,45 @@ html body main .more-infos {
   width: 40%;
   text-align: center;
   color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html body main .more-infos hr {
+  margin: 3rem;
+}
+html body main .more-infos__general__row {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+html body main .more-infos__general__row h2 {
+  width: 100%;
+  font-size: 5rem;
+}
+html body main .more-infos__general__row h3 {
+  width: 100%;
+  font-size: 3rem;
+}
+html body main .more-infos__general__row img {
+  max-width: 100px;
+  width: 100%;
+  margin: auto;
+}
+html body main .more-infos__precise__rainchance h4 {
+  margin-bottom: 2rem;
+}
+html body main .more-infos__precise__sun {
+  display: flex;
+}
+html body main .more-infos__precise__sun h4 {
+  margin-bottom: 2rem;
+}
+html body main .more-infos__precise__sun__set, html body main .more-infos__precise__sun__rise {
+  width: 50%;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

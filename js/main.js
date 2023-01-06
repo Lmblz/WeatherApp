@@ -34,6 +34,9 @@ function changeInputs() {
             case 'temperature':
                 input.innerHTML = request + '°C'
                 break
+            case 'feelslike':
+                input.innerHTML = request + '°C'
+                break
             case 'wind':
                 input.innerHTML = request + 'km/h'
                 break
