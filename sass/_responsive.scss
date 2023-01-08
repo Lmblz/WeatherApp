@@ -1,0 +1,196 @@
+@media screen and (max-width: 1280px) {
+    html {
+        $margin-1: 1rem;
+        $margin-2: 1.5rem;
+        $margin-3: 2rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        body {
+            main {
+                >* {
+                    width: 50%;
+                }
+
+                .main-infos {
+                    padding: $margin-3;
+
+                    &__cards {
+                        display: block;
+
+                        &__card {
+                            width: inherit;
+
+                            &.temperature {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .more-infos {
+                    padding: $margin-3;
+
+                    &__general {
+                        &__row {
+
+                            h2#citychosen,
+                            h2#time {
+                                font-size: 3rem;
+                            }
+
+                            h3#feelslike,
+                            h3#wind {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        $margin-1: .5rem;
+        $margin-2: 1rem;
+        $margin-3: 1.5rem;
+
+        body {
+            main {
+                .main-infos {
+                    padding: $margin-2;
+
+                    &__form {
+                        h2 {
+                            text-align: left;
+                        }
+
+                        input {
+                            text-align: left;
+                            padding-left: $margin-3;
+
+                            &:first-of-type {
+                                width: calc(100% - $margin-3);
+                            }
+
+                            &::placeholder {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+
+                .more-infos {
+                    padding: $margin-2;
+                    justify-content: space-evenly;
+
+                    hr {
+                        margin: $margin-3 0;
+                    }
+
+                    &__general {
+                        &__row {
+
+                            h2#citychosen,
+                            h2#time {
+                                font-size: 2rem;
+                            }
+
+                            h3#feelslike,
+                            h3#wind {
+                                font-size: 1.5rem;
+                            }
+
+                            img {
+                                max-width: 80px;
+                            }
+                        }
+                    }
+
+                    &__precise {
+                        &__rainchance {
+                            h4 {
+                                margin-bottom: $margin-1;
+                            }
+                        }
+
+                        &__sun {
+                            flex-direction: column;
+
+                            >* {
+                                width: 100%;
+
+                                &:first-child {
+                                    margin-bottom: $margin-3;
+                                }
+                            }
+
+                            h4 {
+                                margin-bottom: $margin-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        $margin-1: .5rem;
+        $margin-2: 1rem;
+        $margin-3: 1.5rem;
+
+        body {
+            main {
+                flex-direction: column;
+
+                .main-infos,
+                .more-infos {
+                    width: auto;
+                    min-height: 100vh;
+                }
+
+                .main-infos {
+                    &__titles {}
+
+                    &__form {
+
+                        input {
+                            max-width: 600px;
+                            margin: 0;
+                            width: auto;
+                        }
+                    }
+
+                    &__cards {
+
+                        &__card {}
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,9 +2,9 @@ html {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: white;
 
-    $margin-1 : 1rem;
-    $margin-2 : 2rem;
-    $margin-3 : 3rem;
+    $margin-1: 1rem;
+    $margin-2: 2rem;
+    $margin-3: 3rem;
 
     * {
         margin: 0;
@@ -65,7 +65,7 @@ html {
                     h2 {
                         margin-bottom: $margin-2;
                     }
-                    
+
                     input {
                         border: 0;
                         outline: none;
@@ -83,7 +83,7 @@ html {
                         -moz-border-radius: 5px;
                         -ms-border-radius: 5px;
                         -o-border-radius: 5px;
-                        text-align: center;
+                        //text-align: center;
                         color: white;
 
                         &:first-of-type {
@@ -94,7 +94,12 @@ html {
                             -ms-transition: all .5s;
                             -o-transition: all .5s;
 
-                            &:active,&:focus,&:focus-within,&:target,&:visited,&:focus-visible{   
+                            &:active,
+                            &:focus,
+                            &:focus-within,
+                            &:target,
+                            &:visited,
+                            &:focus-visible {
                                 border-radius: 15px;
                                 -webkit-border-radius: 15px;
                                 -moz-border-radius: 15px;
@@ -128,8 +133,8 @@ html {
                                 color: white
                             }
                         }
-                        
-                        &::placeholder{
+
+                        &::placeholder {
                             font-size: 1.5rem;
                             font-family: 'Montserrat', Arial, Helvetica, sans-serif;
                             text-align: center;
@@ -157,11 +162,12 @@ html {
                         padding: 1rem;
                         padding-left: 1.5rem;
 
-                        &__desc {      
+                        &__desc {
                             width: 70%;
                             text-align: center;
 
-                            h3, h4 {
+                            h3,
+                            h4 {
                                 margin: $margin-2 auto;
                             }
                         }
@@ -174,9 +180,12 @@ html {
             }
 
             .more-infos {
-                background: #B993D6;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #B993D6;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to top, #8CA6DB, #B993D6);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 width: 40%;
                 text-align: center;
                 color: white;
@@ -184,13 +193,13 @@ html {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                
+
                 hr {
                     margin: $margin-3;
                 }
 
                 &__general {
-                    
+
                     &__row {
                         display: flex;
                         width: 100%;
@@ -198,8 +207,8 @@ html {
                         margin-bottom: $margin-2;
 
                         h2 {
-                          width: 100%;
-                          font-size: 5rem;
+                            width: 100%;
+                            font-size: 5rem;
                         }
 
                         h3 {
@@ -223,14 +232,15 @@ html {
                     }
 
                     &__sun {
-                        
+
                         display: flex;
 
                         h4 {
                             margin-bottom: $margin-2
                         }
 
-                        &__set, &__rise {
+                        &__set,
+                        &__rise {
                             width: 50%;
                             gap: 20px;
                         }
@@ -241,3 +251,4 @@ html {
     }
 }
 
+@import 'responsive';

@@ -70,7 +70,6 @@ html body main .main-infos__form input {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  text-align: center;
   color: white;
 }
 html body main .main-infos__form input:first-of-type {
@@ -140,16 +139,20 @@ html body main .main-infos__cards__card__desc {
   width: 70%;
   text-align: center;
 }
-html body main .main-infos__cards__card__desc h3, html body main .main-infos__cards__card__desc h4 {
+html body main .main-infos__cards__card__desc h3,
+html body main .main-infos__cards__card__desc h4 {
   margin: 2rem auto;
 }
 html body main .main-infos__cards__card img {
   height: 64px;
 }
 html body main .more-infos {
-  background: #B993D6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #B993D6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8CA6DB, #B993D6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 40%;
   text-align: center;
   color: white;
@@ -192,6 +195,116 @@ html body main .more-infos__precise__sun h4 {
 html body main .more-infos__precise__sun__set, html body main .more-infos__precise__sun__rise {
   width: 50%;
   gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  html h1 {
+    font-size: 2rem;
+  }
+  html h2 {
+    font-size: 1.5rem;
+  }
+  html h3 {
+    font-size: 1.25rem;
+  }
+  html h4 {
+    font-size: 1rem;
+  }
+  html p {
+    font-size: 1rem;
+  }
+  html body main > * {
+    width: 50%;
+  }
+  html body main .main-infos {
+    padding: 2rem;
+  }
+  html body main .main-infos__cards {
+    display: block;
+  }
+  html body main .main-infos__cards__card {
+    width: inherit;
+  }
+  html body main .main-infos__cards__card.temperature {
+    margin-bottom: 20px;
+  }
+  html body main .more-infos {
+    padding: 2rem;
+  }
+  html body main .more-infos__general__row h2#citychosen,
+html body main .more-infos__general__row h2#time {
+    font-size: 3rem;
+  }
+  html body main .more-infos__general__row h3#feelslike,
+html body main .more-infos__general__row h3#wind {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  html body main .main-infos {
+    padding: 1rem;
+  }
+  html body main .main-infos__form h2 {
+    text-align: left;
+  }
+  html body main .main-infos__form input {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  html body main .main-infos__form input:first-of-type {
+    width: calc(100% - 1.5rem);
+  }
+  html body main .main-infos__form input::placeholder {
+    text-align: left;
+  }
+  html body main .more-infos {
+    padding: 1rem;
+    justify-content: space-evenly;
+  }
+  html body main .more-infos hr {
+    margin: 1.5rem 0;
+  }
+  html body main .more-infos__general__row h2#citychosen,
+html body main .more-infos__general__row h2#time {
+    font-size: 2rem;
+  }
+  html body main .more-infos__general__row h3#feelslike,
+html body main .more-infos__general__row h3#wind {
+    font-size: 1.5rem;
+  }
+  html body main .more-infos__general__row img {
+    max-width: 80px;
+  }
+  html body main .more-infos__precise__rainchance h4 {
+    margin-bottom: 0.5rem;
+  }
+  html body main .more-infos__precise__sun {
+    flex-direction: column;
+  }
+  html body main .more-infos__precise__sun > * {
+    width: 100%;
+  }
+  html body main .more-infos__precise__sun > *:first-child {
+    margin-bottom: 1.5rem;
+  }
+  html body main .more-infos__precise__sun h4 {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  html body main {
+    flex-direction: column;
+  }
+  html body main .main-infos,
+html body main .more-infos {
+    width: auto;
+    min-height: 100vh;
+  }
+  html body main .main-infos__form input {
+    max-width: 600px;
+    margin: 0;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
